@@ -16,10 +16,10 @@ namespace RecipeBook
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         private int id;
-        private string name = null!;
-        private List<string>? ingredients;
-        private List<string>? steps;
-        private List<string>? notes;
+        private string name = "";
+        private List<string> ingredients = new List<string> { };
+        private List<string> steps = new List<string> { };
+        private List<string> notes = new List<string> { };  
 
         public Recipe()
         {

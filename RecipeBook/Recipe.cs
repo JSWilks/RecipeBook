@@ -46,6 +46,21 @@ namespace RecipeBook
 
         public List<string> Notes { get => notes; set => notes = value; }
 
+        public void AddIngredient(string ingredient)
+        { 
+            ingredients.Add(ingredient);
+        }
+
+        public void AddStep(string step)
+        {
+            steps.Add(step);
+        }
+
+        public void AddNote(string note)
+        {
+            notes.Add(note);
+        }
+
         public override string ToString()
         {
             return JsonSerializer.Serialize(this);
